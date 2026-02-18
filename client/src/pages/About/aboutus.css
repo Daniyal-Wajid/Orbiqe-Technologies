@@ -1,0 +1,185 @@
+/* General styles */
+.aboutus-page {
+    font-family: Arial, sans-serif;
+    padding: 150px 20px;
+}
+
+/* About Us Header Styles */
+.aboutus-header {
+    text-align: center;
+    margin-bottom: 50px; /* Adjust this to match other headers */
+}
+
+.aboutus-header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px; /* Match font size with other headers */
+    color: #1d1d1d; /* Match color with other headers */
+    margin: 0;
+}
+
+.aboutus-header p {
+    font-size: 20px; /* Match font size with other section descriptions */
+    color: #4a4a4a; /* Match color with other section descriptions */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* CEO Section Styles */
+.ceo-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* CEO Image Styles */
+.ceo-img {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.ceo-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+}
+
+/* CEO Name Styles */
+.ceo-name {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 32px;
+    color: #1d1d1d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* CEO Message Styles */
+.ceo-message {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.ceo-message h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px; /* Match font size with other headers */
+    color: #1d1d1d; /* Match color with other headers */
+    margin-bottom: 20px;
+}
+
+.ceo-message p {
+    font-size: 20px; /* Match font size with other section descriptions */
+    color: #4a4a4a; /* Match color with other section descriptions */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* About Our Company Section Styles */
+.company-overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.company-overview .company-text {
+    flex: 1;
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.company-text h2, .company-text h3 {
+    font-family: "Bebas Neue", sans-serif;
+    color: #1d1d1d;
+}
+
+.company-text h2 {
+    font-size: 42px; /* Match font size with other section headings */
+    margin-bottom: 20px;
+}
+
+.company-text h3 {
+    font-size: 28px; /* Adjust to match with other section headings */
+    margin-top: 20px;
+}
+
+.company-text ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.company-text li {
+    font-size: 20px; /* Match font size with other list items */
+    color: #4a4a4a; /* Match color with other list items */
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.company-text p {
+    font-size: 20px; /* Match font size with other section descriptions */
+    color: #4a4a4a; /* Match color with other section descriptions */
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* CTA Contact Section Styles */
+.cta-contact {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta-contact h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px; /* Match font size with other headers */
+    color: #1d1d1d; /* Match color with other headers */
+}
+
+.cta-contact p {
+    font-size: 20px; /* Match font size with other section descriptions */
+    color: #4a4a4a; /* Match color with other section descriptions */
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px; /* Match padding with other buttons */
+    font-size: 18px; /* Match font size with other buttons */
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .ceo-section, .company-overview {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ceo-img img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .company-overview {
+        flex-direction: column;
+    }
+
+    .company-text {
+        text-align: center;
+    }
+}

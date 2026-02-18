@@ -1,0 +1,103 @@
+.contact-container {
+  max-width: 600px;
+  margin: 150px auto 20px; /* Reduced top margin */
+  padding: 30px; /* Reduced padding */
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0; 
+}
+
+.contact-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 15px; /* Reduced margin */
+  font-size: 1.5rem; /* Smaller font size */
+  font-weight: 600;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  display: block;
+  margin-left: 0;
+  font-weight: 500;
+  margin-bottom: 6px; 
+  color: #555;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%; 
+  padding: 8px; 
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem; 
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-textarea {
+  height: 50px; 
+  resize: vertical;
+}
+
+.form-button {
+  padding: 6px 12px; /* Made button smaller */
+  border: none;
+  border-radius: 6px;
+  background-color: #ffcc00; /* Yellow */
+  color: black; 
+  font-size: 0.9rem; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-self: center; /* Center the button */
+  margin-top: 15px; /* Reduced space from the top */
+}
+
+.form-button:hover {
+  background-color: #e6b800; /* Darker shade on hover */
+}
+
+.status-message {
+  margin-top: 15px; /* Reduced margin */
+  text-align: center;
+  font-weight: bold;
+  color: #28a745; /* Green for success */
+}
+
+.status-message.error {
+  color: #dc3545; /* Red for errors */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .contact-container {
+    margin: 150px 10px 20px; /* Further reduced margins for smaller screens */
+    padding: 10px; /* Reduced padding */
+  }
+
+  .contact-title {
+    font-size: 1.3rem; /* Smaller font size */
+  }
+  
+  .form-input,
+  .form-textarea,
+  .form-button {
+    font-size: 0.8rem; /* Smaller font size */
+  }
+}

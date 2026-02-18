@@ -1,0 +1,130 @@
+/* Projects Page Styles */
+.projects-page {
+    padding: 20px;
+    padding-top: 150px; /* Adjust padding-top to match header spacing */
+    font-family: Arial, sans-serif;
+}
+
+/* Projects Header */
+.projects-header {
+    text-align: center;
+    margin-bottom: 50px; /* Adjusted to match services-header margin */
+    position: relative;
+    z-index: 2; /* Ensure header is above other content */
+}
+
+.projects-header h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px; /* Match font size with services-header */
+    color: #1d1d1d; /* Match color with services-header */
+    margin: 0;
+}
+
+.projects-header p {
+    font-size: 20px; /* Match font size with services-header */
+    color: #4a4a4a; /* Match color with services-header */
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects List and Cards */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Increase gap to match services-card spacing */
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #f9f9f9; /* Match background color with services-card */
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Match border-radius with services-card */
+    overflow: hidden;
+    width: calc(33.333% - 30px); /* Adjust width to match card spacing */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Match shadow with services-card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Match transition with services-card */
+}
+
+.project-card:hover {
+    transform: scale(1.05); /* Match hover scale with services-card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Match hover shadow with services-card */
+}
+
+.project-img {
+    width: 100%;
+    height: 200px; /* Consistent height with services-image */
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px; /* Match font size with services-title */
+    color: #1d1d1d; /* Match color with services-title */
+    margin: 0 0 10px;
+}
+
+.project-description {
+    font-size: 18px; /* Match font size with services-details */
+    color: #4a4a4a; /* Match color with services-details */
+    line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    margin-top: 50px; /* Adjust margin-top to match spacing */
+}
+
+.cta-section h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 42px; /* Match font size with services-header h1 */
+    color: #1d1d1d; /* Match color with services-header h1 */
+}
+
+.cta-section p {
+    font-size: 20px; /* Match font size with services-header p */
+    color: #4a4a4a; /* Match color with services-header p */
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px; /* Match padding with back-button */
+    font-size: 18px; /* Match font size with back-button */
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .project-card {
+        width: calc(50% - 30px); /* Two cards per row on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row on small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-card {
+        width: calc(50% - 20px); /* Two cards per row on mobile phones */
+    }
+}

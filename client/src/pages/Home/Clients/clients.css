@@ -1,0 +1,30 @@
+.clients-heading {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 36px;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+.clients {
+  padding: 20px; 
+}
+
+.carousel-container {
+  overflow: hidden; 
+  position: relative;}  
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+
+.slick-prev,
+.slick-next {
+  display: none !important; 
+}
